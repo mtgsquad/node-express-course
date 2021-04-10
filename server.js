@@ -32,10 +32,10 @@ app.post('/login',function(req,res){
 	const password=req.body.password;
 
 	// This should come from the database
-	const mockUsername="billyTheKid";
-	const mockPassword="superSecret";
+	const credsUsername="mtgsquad";
+	const credsPassword="iammtg27";
 
-	if (username===mockUsername && password===mockPassword){
+	if (username===credsUsername && password===credsPassword){
 		// In practice, use JSON web token sign method here to make an encrypted token
 		res.json({
 			success: true,
